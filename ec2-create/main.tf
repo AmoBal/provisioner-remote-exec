@@ -1,7 +1,7 @@
-data "aws_ami" "ubuntu" {
-    most_recent = true
-    owners = ["amazon"]
-}
+#data "aws_ami" "ubuntu" {
+#   most_recent = true
+#   owners = ["amazon"]
+#}
 
 resource "tls_private_key" "rsa" {
     algorithm = "RSA"

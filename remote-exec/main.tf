@@ -4,7 +4,7 @@ resource "null_resource" "remote-exec" {
       user = var.user_name
       agent = false
       host = var.ec2_public_ip
-      private_key = file("${var.ec2_pem_path}.pem")
+      private_key = file(var.ec2_pem_path)
     }
 
     provisioner "remote-exec" {

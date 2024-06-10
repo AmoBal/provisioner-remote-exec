@@ -38,7 +38,8 @@ resource "aws_vpc_security_group_egress_rule" "eg_allow_all_traffic" {
 
 
 resource "aws_instance" "create_ec2" {
-    ami = data.aws_ami.ubuntu.id
+    #ami = data.aws_ami.ubuntu.id
+    ami = "ami-080660c9757080771"
     instance_type = var.instance_type
     key_name = aws_key_pair.key_pair.key_name
     tags = {
